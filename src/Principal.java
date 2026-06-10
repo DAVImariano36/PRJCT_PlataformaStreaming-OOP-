@@ -1,3 +1,5 @@
+import br.com.NovaVision.models.Movie;
+
 import java.util.Scanner;
 
 public class Principal {

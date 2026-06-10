@@ -1,3 +1,5 @@
+package br.com.NovaVision.models;
+
 public class Movie {
 
     String name;
@@ -10,23 +12,23 @@ public class Movie {
     String genre;
     String synopsis;
 
-    void displayInfo(){
+    public void displayInfo(){
         System.out.println("Nome do Filme: " + name);
         System.out.println("Data de Lançamento: " + releaseDate);
         System.out.println("Gênero: " + genre);
         System.out.println("Sinopse: " + synopsis);
     }
 
-    void measuringReviews(double review){
+    public void measuringReviews(double review){
         reviewAmount += review;
         totalReviews++;
     }
 
-    double starGradeReview(){
+    public double starGradeReview(){
         return averageReview = (reviewAmount / totalReviews) / 2;
     }
 
-    int getTotalReviews(){
+    public int getTotalReviews(){
         return totalReviews;
     }
 }
