@@ -9,16 +9,16 @@ public class Principal {
         Scanner reviewCatcher = new Scanner(System.in);
 
         Movie movie1 = new Movie();
-        movie1.name = "Gigantes de Aço";
-        movie1.genre = "Ação";
-        movie1.releaseDate = 2011;
-        movie1.synopsis = """
+        movie1.setName("Gigantes de Aço");
+        movie1.setGenre("Ação");
+        movie1.setReleaseDate(2011);
+        movie1.setSynopsis("""
                 Em um futuro próximo onde o boxe robótico é um
                 esporte de alto nível, um ex-boxeador em
                 dificuldades sente que encontrou um campeão em
                 um robô descartado.
-                """;
-        movie1.planIncluded = true;
+                """);
+        movie1.setPlanIncluded(true);
 
         movie1.displayInfo();
 
