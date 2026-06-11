@@ -2,15 +2,15 @@ package br.com.NovaVision.models;
 
 public class Movie {
 
-    String name;
-    int releaseDate;
-    boolean planIncluded;
-    int plays;
-    double averageReview;
+    private String name;
+    private int releaseDate;
+    private boolean planIncluded;
+    private int plays;
+    private double averageReview;
     private double reviewAmount;
     private int totalReviews;
-    String genre;
-    String synopsis;
+    private String genre;
+    private String synopsis;
 
     public void displayInfo(){
         System.out.println("Nome do Filme: " + name);
