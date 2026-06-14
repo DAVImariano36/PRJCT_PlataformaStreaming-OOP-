@@ -1,6 +1,6 @@
 package br.com.NovaVision.models;
 
-public class Serie extends Titles{
+public class Serie extends Titles {
 
     int seasons;
     int epsodiesBySeason;

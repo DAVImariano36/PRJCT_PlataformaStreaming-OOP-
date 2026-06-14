@@ -1,4 +1,5 @@
 import br.com.NovaVision.models.Movie;
+import br.com.NovaVision.tools.RecomendationFilter;
 
 import java.util.Scanner;
 
@@ -30,6 +31,10 @@ public class Principal {
         movie1.measuringReviews(reviewCatcher.nextDouble());
 
         System.out.println("Total de Avaliações: " + movie1.getTotalReviews());
-        System.out.println("Estrelas: " + movie1.starGradeReview());
+        System.out.println("Avaliação: " + movie1.getAvarageReview());
+        System.out.println("Estrelas: " + movie1.getClassification());
+
+        RecomendationFilter recommends = new RecomendationFilter();
+        recommends.filter(movie1);
     }
 }

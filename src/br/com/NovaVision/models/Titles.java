@@ -1,6 +1,8 @@
 package br.com.NovaVision.models;
 
-public class Titles {
+import br.com.NovaVision.tools.Classifiable;
+
+public class Titles implements Classifiable {
 
     private String name;
     private int releaseDate;
@@ -67,12 +69,19 @@ public class Titles {
         totalReviews++;
     }
 
-    public double starGradeReview(){
+    public double getAvarageReview(){
         double averageReview;
-        return averageReview = (reviewAmount / totalReviews) / 2;
+        return averageReview = (reviewAmount / totalReviews);
     }
 
     public int getTotalReviews(){
         return totalReviews;
+    }
+
+    @Override
+    public int getClassification() {
+        int starGradeReview = 0;
+        starGradeReview += (int) (getAvarageReview() / 2);
+        return starGradeReview;
     }
 }
