@@ -19,10 +19,6 @@ public class Titles implements Classifiable {
         this.name = name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setReleaseDate(int releaseDate) {
         this.releaseDate = releaseDate;
     }
