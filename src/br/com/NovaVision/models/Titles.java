@@ -12,6 +12,7 @@ public class Titles implements Classifiable {
     private int totalReviews;
     private String genre;
     private String synopsis;
+    private int duration;
 
     public void setName(String name) {
         this.name = name;
@@ -57,6 +58,14 @@ public class Titles implements Classifiable {
         return synopsis;
     }
 
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
     public void displayInfo(){
         System.out.println("Nome do Filme: " + name);
         System.out.println("Data de Lançamento: " + releaseDate);
@@ -83,5 +92,10 @@ public class Titles implements Classifiable {
         int starGradeReview = 0;
         starGradeReview += (int) (getAvarageReview() / 2);
         return starGradeReview;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName();
     }
 }

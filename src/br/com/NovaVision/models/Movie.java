@@ -4,6 +4,10 @@ public class Movie extends Titles {
 
     private String director;
 
+    public Movie(String name) {
+        this.setName(name);
+    }
+
     public String getDirector() {
         return director;
     }
