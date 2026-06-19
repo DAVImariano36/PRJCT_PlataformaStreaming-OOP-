@@ -14,6 +14,11 @@ public class Titles implements Classifiable {
     private String synopsis;
     private int duration;
 
+    public Titles(String genre, String name) {
+        this.genre = genre;
+        this.name = name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

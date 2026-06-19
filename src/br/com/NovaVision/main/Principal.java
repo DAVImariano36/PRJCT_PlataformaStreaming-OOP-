@@ -13,8 +13,7 @@ public class Principal {
     static void main() {
         Scanner reviewCatcher = new Scanner(System.in);
 
-        Movie movie1 = new Movie("Gigantes de Aço");
-        movie1.setGenre("Ação");
+        Movie movie1 = new Movie("Ação","Gigantes de Aço");
         movie1.setReleaseDate(2011);
         movie1.setDuration(127);
         movie1.setSynopsis("""
@@ -42,9 +41,7 @@ public class Principal {
         RecomendationFilter recommends = new RecomendationFilter();
         recommends.filter(movie1);
 
-        Serie serie1 = new Serie();
-        serie1.setName("Breaking Bad");
-        serie1.setGenre("Drama Criminal");
+        Serie serie1 = new Serie("Drama Criminal", "Breaking Bad");
         serie1.setReleaseDate(2008);
         serie1.setSynopsis("""
                 Um professor de química diagnosticado com câncer
@@ -56,8 +53,7 @@ public class Principal {
         serie1.setSeasons(5);
         serie1.setEpsodiesBySeason(13);
 
-        Movie movie2 = new Movie("Círculo de Fogo");
-        movie2.setGenre("Ação");
+        Movie movie2 = new Movie("Ação","Círculo de Fogo");
         movie2.setReleaseDate(2013);
         movie2.setDuration(131);
         movie2.setSynopsis("""
@@ -77,8 +73,7 @@ public class Principal {
         System.out.println("Avaliação: " + movie2.getAvarageReview());
         System.out.println("Estrelas: " + movie2.getClassification());
 
-        Movie movie3 = new Movie("O Espetacular Homem-Aranha 2: A Ameaça de Electro");
-        movie3.setGenre("Ação");
+        Movie movie3 = new Movie("Heróis","O Espetacular Homem-Aranha 2: A Ameaça de Electro");
         movie3.setReleaseDate(2014);
         movie3.setDuration(142);
         movie3.setSynopsis("""
