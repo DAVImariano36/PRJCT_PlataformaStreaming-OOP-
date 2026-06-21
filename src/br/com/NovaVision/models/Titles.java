@@ -2,7 +2,7 @@ package br.com.NovaVision.models;
 
 import br.com.NovaVision.tools.Classifiable;
 
-public class Titles implements Classifiable {
+public class Titles implements Classifiable, Comparable<Titles> {
 
     private String name;
     private int releaseDate;
@@ -74,7 +74,7 @@ public class Titles implements Classifiable {
         System.out.println("Sinopse: " + synopsis);
     }
 
-    public void measuringReviews(double review){
+    public void measuringReviews(double review ){
         reviewAmount += review;
         totalReviews++;
     }
@@ -98,5 +98,10 @@ public class Titles implements Classifiable {
     @Override
     public String toString() {
         return this.getName();
+    }
+
+    @Override
+    public int compareTo(Titles o) {
+        return this.getName().compareTo(o.getName());
     }
 }
